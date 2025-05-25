@@ -1,0 +1,1 @@
+# Pydantic schema for user
