@@ -1,1 +1,0 @@
-# SQLAlchemy model for user

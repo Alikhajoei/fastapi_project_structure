@@ -1,8 +1,5 @@
-# Entry point for FastAPI application
 from fastapi import FastAPI
+from app.api.v1.router import router as v1_router
 
-app = FastAPI()
-
-@app.get('/')
-def read_root():
-    return {"message": "Hello World"}
+app = FastAPI(title="Async FastAPI + Postgres")
+app.include_router(v1_router, prefix="/api/v1")
